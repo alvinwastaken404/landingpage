@@ -8,6 +8,10 @@ body {
     margin-bottom: 10px;
 }
 
+.sidebar a i {
+    margin-right: 10px;
+}
+
 /* Toggle Button */
 .toggle-btn {
     position: fixed;
