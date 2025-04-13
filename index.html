@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Pelatihan HTML - Landing Page Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Tombol toggle -->
+    <button id="toggleSidebar" class="toggle-btn">☰</button>
+
+    <!-- Sidebar nav -->
+    <nav class="sidebar">
+        <button id="toggleSidebar" class="toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>        
+        <a href="#home"><i class="fas fa-home"></i> Beranda</a>
+        <a href="#about"><i class="fas fa-info-circle"></i> Tentang</a>
+        <a href="#services"><i class="fas fa-cogs"></i> Layanan</a>
+        <a href="#contact"><i class="fas fa-envelope"></i> Kontak</a>
+    </nav>
+    
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Belajar Membuat Landing Page</h1>
+        <p>Pelatihan HTML</p>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Selamat Datang di Pelatihan Kami</h2>
+        <p>Mari belajar membuat website sederhana dengan HTML dasar</p>
+        <button class="btn-utama">Mulai Belajar</button>
+    </section>
+
+    <!-- Tentang -->
+    <section id="about" class="tentang">
+        <h2>Tentang Kami</h2>
+        <p>Kami adalah penyedia pelatihan pemrograman web untuk pemula yang ingin memulai karir di bidang teknologi.</p>
+        
+        <div class="kartu-tentang">
+            <div class="kartu">
+                <i class="fas fa-lightbulb fa-2x" style="color: #2d6a4f;"></i>
+                <h3>Mudah Dipahami</h3>
+                <p>Materi disampaikan dengan bahasa yang sederhana</p>
+            </div>
+            <div class="kartu">
+                <i class="fas fa-laptop-code fa-2x" style="color: #2d6a4f;"></i>
+                <h3>Praktik Langsung</h3>
+                <p>Belajar sambil langsung mempraktikkan kode</p>
+            </div>
+            <div class="kartu">
+                <i class="fas fa-gift fa-2x" style="color: #2d6a4f;"></i>
+                <h3>Gratis</h3>
+                <p>Tidak ada biaya untuk pelatihan dasar</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Layanan -->
+    <section id="services" class="layanan">
+        <h2>Layanan Kami</h2>
+        
+        <div class="kartu-layanan">
+            <div class="kartu">
+                <i class="fas fa-code fa-2x" style="color: #2d6a4f;"></i>
+                <h3>HTML Dasar</h3>
+                <p>Belajar struktur dasar HTML</p>
+            </div>
+            <div class="kartu">
+                <i class="fas fa-file-alt fa-2x" style="color: #2d6a4f;"></i>
+                <h3>Form HTML</h3>
+                <p>Membuat form interaktif</p>
+            </div>
+            <div class="kartu">
+                <i class="fas fa-table fa-2x" style="color: #2d6a4f;"></i>
+                <h3>Tabel HTML</h3>
+                <p>Mengatur data dalam tabel</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimoni -->
+    <section class="testimoni">
+        <h2>Apa Kata Peserta</h2>
+        <div class="kartu-testimoni">
+            <div>
+                <p>"Pelatihannya sangat mudah dipahami untuk pemula seperti saya."</p>
+                <p><strong>- Budi, Mahasiswa</strong></p>
+            </div>
+            <div>
+                <p>"Materinya praktis dan langsung bisa diaplikasikan."</p>
+                <p><strong>- Ani, Guru</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact" class="kontak">
+        <h2>Hubungi Kami</h2>
+        <p>Email: info@kursuswebdev.com</p>
+        <p>Telepon: (021) 123-4567</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Pelatihan HTML Dasar. Semua hak dilindungi.</p>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById('toggleSidebar');
+        const sidebar = document.querySelector('.sidebar');
+    
+        toggleBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('show');
+        });
+    </script>    
+</body>
+</html>
