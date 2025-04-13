@@ -1,0 +1,167 @@
+/* Global */
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.kartu i {
+    margin-bottom: 10px;
+}
+
+/* Toggle Button */
+.toggle-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: .4s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #265942;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: -200px;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    z-index: 999;
+}
+.sidebar a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+.sidebar a:hover {
+    background-color: #444;
+}
+.sidebar.show {
+    left: 0;
+}
+
+/* Header */
+.header {
+    background-color: #2d6a4f;
+    color: white;
+    text-align: center;
+    padding: 30px 20px 40px 20px;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+}
+.btn-utama {
+    background-color: #2d6a4f;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    transition: .4s ease;
+}
+
+.btn-utama:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid #2d6a4f;
+    box-shadow: 0 4px 0 3px #2d6a4f;
+}
+
+.btn-utama:active {
+    transform: translateY(4px);
+    box-shadow: none;
+}
+
+/* Tentang */
+/* Tentang - pakai gaya kayak layanan */
+.tentang {
+    background-color: #f0f0f0;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.kartu-tentang {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.kartu-tentang .kartu {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+/* Layanan */
+.layanan {
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+    text-align: center;
+}
+.kartu-layanan {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.kartu-layanan > div {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Testimoni */
+.testimoni {
+    padding: 50px 20px;
+    text-align: center;
+}
+.kartu-testimoni {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.kartu-testimoni > div {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 250px;
+}
+
+/* Kontak */
+.kontak {
+    background-color: #2d6a4f;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
